@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<ThingDef Abstract="True" Name="AIRobot_Bot" ParentName="Base_X2_AIRobot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
+		<race>
+			<body>AIRobot</body>
+			<baseBodySize>0.65</baseBodySize>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseHealthScale>0.5</baseHealthScale>
+			<!--<intelligence>ToolUser</intelligence>-->
+			<nameCategory>HumanStandard</nameCategory>
+		</race>
+		<statBases>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>100</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
+		<verbs>
+			<li><verbClass>Verb_BeatFire</verbClass></li>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<defaultCooldownTime>1.45</defaultCooldownTime>
+				<meleeDamageBaseAmount>1</meleeDamageBaseAmount>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+		</verbs>
+		<recipes></recipes>
+		<allowLearning>true</allowLearning>
+	</ThingDef>
+
+	<!--******** TIER META ********-->
+
+	<ThingDef Abstract="True" Name="AIRobot_Bot_1" ParentName="AIRobot_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<thingClass>AIRobot.X2_AIRobot</thingClass>
+		<inspectorTabs>
+			<li>ITab_Pawn_Character</li>
+		</inspectorTabs>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<MoveSpeed>5.85</MoveSpeed>
+			<Flammability>1.0</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--******** INHERET ********-->
+
+<!-- override -->
+
+	
+
+	<!--
+		Wow, this compatibility thing is fucking retarded right?
+		https://youtu.be/dGiSNPYj_iU?t=56s
+
+		for future A18 update, or whenever save compatibility breaks;
+		rename T1 syntax to "AIRobot_Hauler" and others to "AIRobot_Hauler_II" etc, mirroring changes in the pawnkind and stations spawnThingDef
+		NOTE for shit to function properly, both the pawnkind and race name have to be identical (?) weird
+	-->
+
+	
+
+<!-- RPP -->
+
+	<ThingDef ParentName="AIRobot_Bot_1" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_GardenerBot</defName>
+		<label>Gardener Bot</label>
+		<description>A robot for gardening work (like cutting trees). It can also do cooking.</description>
+		<robotWorkTypes>
+			<li>
+				<workTypeDef>Cooking</workTypeDef>
+				<priority>2</priority>
+			</li>
+			<li>
+				<workTypeDef>PlantCutting</workTypeDef>
+				<priority>1</priority>
+			</li>
+			<li>
+				<workTypeDef>Growing</workTypeDef>
+				<priority>1</priority>
+			</li>
+		</robotWorkTypes>
+		<robotSkills>
+			<li><skillDef>Cooking</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>20</level><passion>Minor</passion></li>
+		</robotSkills>
+		<destroyedDef>AIRobot_GardenerBot_disabled</destroyedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Bot_1" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_CraftingBot</defName>
+		<label>Crafting Bot</label>
+		<description>A robot for crafting (smithing/tailoring/crafting).</description>
+		<robotWorkTypes>
+			<li>
+				<workTypeDef>Smithing</workTypeDef>
+				<priority>1</priority>
+			</li>
+			<li>
+				<workTypeDef>Tailoring</workTypeDef>
+				<priority>1</priority>
+			</li>
+			<li>
+				<workTypeDef>Crafting</workTypeDef>
+				<priority>1</priority>
+			</li>
+		</robotWorkTypes>
+		<robotSkills>
+			<li><skillDef>Crafting</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>20</level><passion>Minor</passion></li>
+		</robotSkills>
+		<destroyedDef>AIRobot_CraftingBot_disabled</destroyedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Bot_1" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_MiningBot</defName>
+		<label>Mining Bot</label>
+		<description>A robot for mining.</description>
+		<robotWorkTypes>
+			<li>
+				<workTypeDef>Mining</workTypeDef>
+				<priority>1</priority>
+			</li>
+		</robotWorkTypes>
+		<robotSkills>
+			<li><skillDef>Mining</skillDef><level>20</level><passion>Minor</passion></li>
+		</robotSkills>
+		<destroyedDef>AIRobot_MiningBot_disabled</destroyedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Bot_1" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_ConstructionBot</defName>
+		<label>Construction Bot</label>
+		<description>A robot for constructing and repairing.</description>
+		<robotWorkTypes>
+			<li>
+				<workTypeDef>Construction</workTypeDef>
+				<priority>1</priority>
+			</li>
+		</robotWorkTypes>
+		<robotSkills>
+			<li><skillDef>Construction</skillDef><level>20</level><passion>Minor</passion></li>
+		</robotSkills>
+		<destroyedDef>AIRobot_ConstructionBot_disabled</destroyedDef>
+	</ThingDef>
+
+</Defs>
+
+

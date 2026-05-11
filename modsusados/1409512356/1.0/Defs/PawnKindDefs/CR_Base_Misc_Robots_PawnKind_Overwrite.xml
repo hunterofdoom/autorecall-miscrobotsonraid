@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--
+		Overwritting entire base PawnKinds to improve efficiency and add abstration.
+		Plus is allows for easier XML Extentions patching.
+	-->
+	<!-- ========================= Replacing PawnKind and adding Abstract  ========================= -->
+	<PawnKindDef Name="AIRobot_PawnKind" Abstract="True">
+		<combatPower>20</combatPower>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<backstoryCategories>
+			<li>Civil</li>
+		</backstoryCategories>
+		<isFighter>false</isFighter>
+		<wildGroupSize>0</wildGroupSize>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<apparelTags>
+			<li>Spacer</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<invNutrition>0.05</invNutrition>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>0.04</apparelAllowHeadgearChance>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_Cleaner</defName>
+		<label>CleaningBot</label>
+		<race>AIRobot_Cleaner</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/CleaningBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.85</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.2, 0.4)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_Hauler</defName>
+		<label>HaulingBot</label>
+		<race>AIRobot_Hauler</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/HoverBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.85</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

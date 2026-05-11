@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!--
+		Overwrote entire base stations, bots, and pawnkinds to improve efficiency in other files.
+		It was taking too many patches to fix and is better for restructuring.
+	-->
+</Patch>
+
+

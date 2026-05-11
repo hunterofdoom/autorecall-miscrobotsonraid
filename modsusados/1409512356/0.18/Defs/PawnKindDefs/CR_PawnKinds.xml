@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<PawnKindDef Name="AIRobot_PawnKind" Abstract="True">
+		<combatPower>10</combatPower>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+		<backstoryCategory>Spacer</backstoryCategory>
+		<isFighter>false</isFighter>
+		<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<apparelTags>
+			<li>Spacer</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<invNutrition>0.05</invNutrition>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadwearChance>0.04</apparelAllowHeadwearChance>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<!--******** INHERET ********-->
+
+	<!-- override -->
+
+	<!-- RPP -->
+
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_GardenerBot</defName>
+		<label>Gardener Bot</label>
+		<race>AIRobot_GardenerBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/GardenerBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_CraftingBot</defName>
+		<label>Crafting Bot</label>
+		<race>AIRobot_CraftingBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/CraftingBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_MiningBot</defName>
+		<label>Mining Bot</label>
+		<race>AIRobot_MiningBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/MiningBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="AIRobot_PawnKind">
+		<defName>AIRobot_ConstructionBot</defName>
+		<label>Construction Bot</label>
+		<race>AIRobot_ConstructionBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/ConstructionBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+
+</Defs>

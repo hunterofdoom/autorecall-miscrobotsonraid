@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- RimWorld usa Mono con compatibilidad .NET Framework 4.7.2 -->
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>AutoRecall_MiscRobots</AssemblyName>
+    <RootNamespace>AutoRecall_MiscRobots</RootNamespace>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- No copiar dependencias del sistema, solo nuestra DLL -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- Output directamente a la carpeta Assemblies del mod -->
+    <OutputPath>..\..\1.6\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RimWorld: Assembly principal del juego -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Users\Audur\Desktop\Games NVM\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Unity Engine -->
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Users\Audur\Desktop\Games NVM\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Harmony (incluido en RimWorld vía Hugslib/mods) -->
+    <Reference Include="0Harmony">
+      <HintPath>C:\Users\Audur\Desktop\Games NVM\RimWorld\Mods\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Misc. Robots DLL (para acceder a X2_Building_AIRobotRechargeStation) -->
+    <Reference Include="AIRobot">
+      <HintPath>C:\Users\Audur\Desktop\Games NVM\RimWorld\Mods\724602224\1.6\Assemblies\AIRobot.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

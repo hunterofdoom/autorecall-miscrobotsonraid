@@ -1,0 +1,5 @@
+C:\Users\Audur\Desktop\AutoRecall Misc Robots on Raid\Build\obj\AutoRecall_MiscRobots.csproj.AssemblyReference.cache
+C:\Users\Audur\Desktop\AutoRecall Misc Robots on Raid\Build\obj\AutoRecall_MiscRobots.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Audur\Desktop\AutoRecall Misc Robots on Raid\Build\obj\AutoRecall_MiscRobots.AssemblyInfoInputs.cache
+C:\Users\Audur\Desktop\AutoRecall Misc Robots on Raid\Build\obj\AutoRecall_MiscRobots.AssemblyInfo.cs
+C:\Users\Audur\Desktop\AutoRecall Misc Robots on Raid\Build\obj\AutoRecall_MiscRobots.csproj.CoreCompileInputs.cache

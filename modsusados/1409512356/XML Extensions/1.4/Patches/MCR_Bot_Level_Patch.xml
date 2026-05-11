@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable1</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<robotSkills>
+						<li><skillDef>Medicine</skillDef><level>{MCRBotLevelVariable1}</level><passion>Minor</passion></li>
+					</robotSkills>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable2</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Cooking</skillDef><level>{MCRBotLevelVariable2}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable3</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Plants</skillDef><level>{MCRBotLevelVariable3}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable4</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Construction</skillDef><level>{MCRBotLevelVariable4}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable5</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Mining</skillDef><level>{MCRBotLevelVariable5}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable6</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Crafting</skillDef><level>{MCRBotLevelVariable6}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotLevelVariable7</key>
+		<defaultValue>20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AIRobot_Bot"]/robotSkills</xpath>
+				<value>
+					<li><skillDef>Intellectual</skillDef><level>{MCRBotLevelVariable7}</level><passion>Minor</passion></li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotSpeedVariable</key>
+		<defaultValue>5</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>{MCRBotSpeedVariable}</MoveSpeed>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRHaulerCapacityVariable</key>
+		<defaultValue>400</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="AIRobot_Hauler"]/statBases/CarryingCapacity</xpath>
+				<value>
+					<CarryingCapacity>{MCRHaulerCapacityVariable}</CarryingCapacity>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>	
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotFlammabilityVariable</key>
+		<defaultValue>1</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/Flammability</xpath>
+				<value>
+					<Flammability>{MCRBotFlammabilityVariable}</Flammability>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotWorkSpeedGlobalVariable</key>
+		<defaultValue>1</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/WorkSpeedGlobal</xpath>
+				<value>
+					<WorkSpeedGlobal>{MCRBotWorkSpeedGlobalVariable}</WorkSpeedGlobal>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotSharpArmorVariable</key>
+		<defaultValue>0.12</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>{MCRBotSharpArmorVariable}</ArmorRating_Sharp>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotBluntArmorVariable</key>
+		<defaultValue>0.08</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>{MCRBotBluntArmorVariable}</ArmorRating_Blunt>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotHeatArmorVariable</key>
+		<defaultValue>0.20</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobot"]/statBases/ArmorRating_Heat</xpath>
+				<value>
+					<ArmorRating_Heat>{MCRBotHeatArmorVariable}</ArmorRating_Heat>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRSellPriceFactorVariable</key>
+		<defaultValue>0.30</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobotRechargeStation"]/statBases/SellPriceFactor</xpath>
+				<value>
+					<SellPriceFactor>{MCRSellPriceFactorVariable}</SellPriceFactor>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRStationCraftingSkillRequirementVariable</key>
+		<defaultValue>9</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobotRechargeStation"]/recipeMaker/skillRequirements/Crafting</xpath>
+				<value>
+					<Crafting>{MCRStationCraftingSkillRequirementVariable}</Crafting>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRStationRechargeEfficiencyVariable</key>
+		<defaultValue>1.0</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobotRechargeStation"]/rechargeEfficiency</xpath>
+				<value>
+					<rechargeEfficiency>{MCRStationRechargeEfficiencyVariable}</rechargeEfficiency>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRStationPowerConsumptionVariable</key>
+		<defaultValue>250</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobotRechargeStation"]/comps/li[@Class and compClass="CompPowerTrader"]/basePowerConsumption</xpath>
+				<value>
+					<basePowerConsumption>{MCRStationPowerConsumptionVariable}</basePowerConsumption>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRBotDrawSizeVariable</key>
+		<defaultValue>0.85</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="AIRobot_Cleaner" or defName="AIRobot_Hauler" or defName="AIRobot_GardenerBot" or defName="AIRobot_CraftingBot" or defName="AIRobot_MiningBot" or defName="AIRobot_ConstructionBot" or defName="AIRobot_MedBot"]/lifeStages/li/bodyGraphicData/drawSize</xpath>
+				<value>
+					<drawSize>{MCRBotDrawSizeVariable}</drawSize>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>leion247658MiscVHCraftableHRobots</modId>
+		<key>MCRStationDrawSizeVariable</key>
+		<defaultValue>0.95</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="Base_X2_AIRobotRechargeStation"]/graphicData/drawSize</xpath>
+				<value>
+					<drawSize>{MCRStationDrawSizeVariable}</drawSize>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+</Patch>

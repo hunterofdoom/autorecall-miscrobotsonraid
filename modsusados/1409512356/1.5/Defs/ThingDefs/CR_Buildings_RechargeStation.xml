@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--
+		Overwrote whole Misc Robots base structure so it has the entire base abstract. Check file CR_Base_Misc_Robots_Overwrite.xml
+		Only need minor changes going forward.
+	-->
+	<!--================================ Abstract bases ======================================-->
+	<ThingDef Abstract="True" Name="CR_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MarketValue>1800</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>30</Plasteel>
+			<Gold>8</Gold>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<robotRepairCosts> <!-- Each item must be greater than one or it'll be ignored. -->
+			<Steel>35</Steel>
+			<Plasteel>5</Plasteel>
+			<Gold>3</Gold>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer> <!-- Left here encase the above issue gets fixed -->
+		</robotRepairCosts>
+	</ThingDef>
+
+	<!--================================ Concrete ======================================-->
+	<ThingDef ParentName="CR_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_GardenerBot</defName>
+		<label>Gardener Bot Base Station</label>
+		<description>This station comes equipped with a gardener robot.</description>
+		<graphicData>
+			<texPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_GardenerBot</texPath>
+		</graphicData>
+		<spawnThingDef>AIRobot_GardenerBot</spawnThingDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="CR_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_CraftingBot</defName>
+		<label>Crafting Bot Base Station</label>
+		<description>This station comes equipped with a crafting robot.</description>
+		<graphicData>
+			<texPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_CraftingBot</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<spawnThingDef>AIRobot_CraftingBot</spawnThingDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="CR_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_MiningBot</defName>
+		<label>Mining Bot Base Station</label>
+		<description>This station comes equipped with a mining robot.</description>
+		<graphicData>
+			<texPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_MiningBot</texPath>
+		</graphicData>
+		<spawnThingDef>AIRobot_MiningBot</spawnThingDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="CR_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_ConstructionBot</defName>
+		<label>Construction Bot Base Station</label>
+		<description>This station comes equipped with a construction robot.</description>
+		<graphicData>
+			<texPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_ConstructionBot</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<spawnThingDef>AIRobot_ConstructionBot</spawnThingDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="CR_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_MedBot</defName>
+		<label>Med Bot Base Station</label>
+		<description>This station comes equipped with a medical robot.</description>
+		<graphicData>
+			<texPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_MedBot</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2300</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<MedicineIndustrial>4</MedicineIndustrial>
+		</costList>
+		<spawnThingDef>AIRobot_MedBot</spawnThingDef>
+	</ThingDef>
+</Defs>

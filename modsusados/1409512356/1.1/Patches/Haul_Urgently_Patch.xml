@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!--<Operation Class="PatchOperationFindMod">
+		<mods><li>Allow Tool</li></mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AIRobot_Hauler"]/race/mechEnabledWorkTypes</xpath>
+			<value><li>HaulingUrgent</li></value>
+		</match>
+	</Operation> For 1.4 and up -->
+	<Operation Class="PatchOperationFindMod">
+		<mods><li>Allow Tool</li></mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AIRobot_Hauler"]/robotWorkTypes</xpath>
+			<value><li><workTypeDef>HaulingUrgent</workTypeDef><priority>1</priority></li></value>
+		</match>
+	</Operation>
+</Patch>

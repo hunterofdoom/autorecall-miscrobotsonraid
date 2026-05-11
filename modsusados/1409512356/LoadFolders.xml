@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<loadFolders>
+	<v0.18>
+		<!-- Mod -->
+		<li>/</li>
+		<li>0.18</li>
+	</v0.18>
+	
+	<v0.19>
+		<!-- Mod -->
+		<li>/</li>
+		<li>0.19</li>
+	</v0.19>
+	
+	<v1.0>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.0</li>
+	</v1.0>
+	
+	<v1.1>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.1</li>
+	</v1.1>
+	
+	<v1.2>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.2</li>
+	</v1.2>
+	
+	<v1.3>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.3</li>
+		<!-- XML Extensions - Needs LoadFolders to apply -->
+		<li IfModActive="imranfish.xmlextensions">XML Extensions/1.3</li>
+	</v1.3>
+	
+	<v1.4>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.4</li>
+		<!-- XML Extensions - Needs LoadFolders to apply -->
+		<li IfModActive="imranfish.xmlextensions">XML Extensions/1.4</li>
+	</v1.4>
+	
+	<v1.5>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.5</li>
+		<!-- XML Extensions - Needs LoadFolders to apply -->
+		<li IfModActive="imranfish.xmlextensions">XML Extensions/1.5</li>
+	</v1.5>
+	
+	<v1.6>
+		<!-- Mod -->
+		<li>/</li>
+		<li>1.6</li>
+		<!-- XML Extensions - Needs LoadFolders to apply -->
+		<li IfModActive="imranfish.xmlextensions">XML Extensions/1.6</li>
+	</v1.6>
+</loadFolders>

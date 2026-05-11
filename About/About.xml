@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>audur.autorecall.miscrobots</packageId>
+  <name>AutoRecall: Misc Robots on Raid</name>
+  <author>Audur</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Automatically recalls all Misc. Robots to their charging stations when any enemy raid or threat begins.
+
+Compatible with:
+- Misc. Robots
+- Misc. Robots++
+- Misc. Craftable Robots
+
+Requires Misc. Core and Misc. Robots to function.</description>
+  <modDependencies>
+    <li>
+      <packageId>Haplo.Miscellaneous.Core</packageId>
+      <displayName>Misc. Core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/704181221</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Haplo.Miscellaneous.Robots</packageId>
+      <displayName>Misc. Robots</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/724602224</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Haplo.Miscellaneous.Core</li>
+    <li>Haplo.Miscellaneous.Robots</li>
+    <li>Haplo.Miscellaneous.RobotsPlusPlus</li>
+    <li>Haplo.Miscellaneous.CraftableRobots</li>
+  </loadAfter>
+</ModMetaData>

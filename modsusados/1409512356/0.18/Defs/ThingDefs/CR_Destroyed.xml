@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META - TIERS ********-->
+
+	<ThingDef Abstract="True" Name="AIRobot_Disabled" ParentName="DisabledBase">
+		<thingClass>AIRobot.X2_AIRobot_disabled</thingClass>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="AIRobot_Disabled_I" ParentName="AIRobot_Disabled">
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>20</Mass>
+		</statBases>
+		<butcherProducts>
+			<Steel>25</Steel>
+		</butcherProducts>
+		<costList>
+			<Steel>55</Steel>
+			<Component>3</Component>
+		</costList>
+		<graphicData>
+			<texPath>Things/AIRobot/GardenerBot_back</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+	<!--******** INHERET ********-->
+
+	<!-- override -->
+
+	<!-- RPP -->
+	<ThingDef ParentName="AIRobot_Disabled_I">
+		<defName>AIRobot_GardenerBot_disabled</defName>
+		<label>GardenerBot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Disabled_I">
+		<defName>AIRobot_CraftingBot_disabled</defName>
+		<label>CraftingBot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Disabled_I">
+		<defName>AIRobot_MiningBot_disabled</defName>
+		<label>MiningBot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+	</ThingDef>
+	
+	<ThingDef ParentName="AIRobot_Disabled_I">
+		<defName>AIRobot_ConstructionBot_disabled</defName>
+		<label>ConstructionBot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+	</ThingDef>
+
+</Defs>
